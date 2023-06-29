@@ -7,7 +7,7 @@ Website bán hàng laptop, điện thoại, linh kiện:
 
 file database : smart_store.sql
 
-- Đường dẫn vào trang quản trị /admin
+- Đường dẫn vào trang quản trị http://localhost/smart_store/public/admin123
  + tài khoản admin : TK: admin , MK : 123456
  + tài khoản demo khách hàng : TK: hoang123, MK: 123456
 
