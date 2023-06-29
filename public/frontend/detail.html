@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Space</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section id="header">
+  <div class="container-lg d-flex justify-content-between">
+    <div class="col-xs-5 col-sm-5 col-md-4 col-lg-4 logo">
+      <a href="#" class="logo"><i class="fa fa-laptop"></i>Smart store</a>
+    </div>
+    <div class="col-md-5 col-lg-5 d-md-block  search">
+      <div class="contact-row">
+        <div class="phone inline"><i class="icon fa fa-phone"></i> (87) 888 888 868</div>
+        <div class="contact inline"><i class="icon fa fa-envelope"></i> sale.smart.store.2019@gmail.com</div>
+      </div>
+      <form action="search" method="get" role="form">
+        <div class="input-search">
+          <input type="text" class="form-control" id="search_text" name="search" placeholder="Nhập từ khóa để tìm kiếm..." />
+          <button><i class="fa fa-search"></i></button>
+        </div>
+      </form>
+    </div>
+    <div class="col-xs-7 col-sm-7 col-md-3 col-lg-3 d-md-block login-cart">
+      <!-- Cart -->
+      <div class="cart_header">
+        <a href="gio-hang" title="Giỏ hàng">
+          <span class="cart_header_icon">
+            <img src="http://localhost/DO-AN-TN-2019/public/images/cart2.png" alt="Cart" />
+          </span>
+          <span class="box_text">
+            <strong class="cart_header_count">Giỏ hàng<span>(0)</span></strong>
+            <span class="cart_price"><p>0 VNĐ</p></span>
+          </span>
+        </a>
+        <div class="cart_clone_box">
+          <div class="cart_box_wrap hidden">
+            <div class="cart_item original clearfix">
+              <div class="cart_item_image"></div>
+              <div class="cart_item_info">
+                <p class="cart_item_title"><a href="" title=""></a></p>
+                <span class="cart_item_quantity"></span>
+                <span class="cart_item_price"></span>
+                <span class="remove"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Cart -->
+      <!-- Account -->
+      <div class="user_login">
+        <a href="thong-tin-khach-hang" title="Tài khoản">
+          <div class="user_login_icon">
+            <img src="http://localhost/DO-AN-TN-2019/public/images/user.png" alt="Cart" />
+          </div>
+          <div class="box_text">
+            <strong>Tài khoản</strong>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-xs-7 col-sm-7 d-md-none d-flex justify-content-end align-items-center">
+      <div class="icon-cart-mobile">
+        <a href="gio-hang">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <span>(0)</span>
+        </a>
+      </div>
+      <div class="header-offcanvas">
+        <button class="nav-header navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Smart store</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <form action="search" method="get" role="form">
+              <div class="input-search">
+                <input type="text" class="form-control" id="search_text" name="search" placeholder="Nhập từ khóa để tìm kiếm..." />
+                <button><i class="fa fa-search"></i></button>
+              </div>
+            </form>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tin tức</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tài khoản</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Đăng kí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Đăng nhập</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="menu-pri">
+      <div class="container-md">
+          <div class="panel-left" style="background: #0f9ed8;">
+              <!--MOBILE-->
+              <nav class="navbar navbar-default d-md-none d-lg-none" role="navigation">
+                  <div class="container-fluid" style="background-color: #0f9ed8;">
+                      <div class="navbar-header">
+                          <button type="button" class="navbar-menu navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-ex1-collapse">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <a class="navbar-brand" style="color: #fff;" href="#">Danh mục sản phẩm</a>
+                      </div>
+                      <div class="collapse navbar-collapse navbar-ex1-collapse d-md-none d-lg-none">
+
+                          <ul class="nav navbar-nav">
+                            <li class="nav-item dropdown">
+                              <a href='san-pham/dien-thoai' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>Điện thoại<i class="fa fa-angle-right pull-right" aria-hidden="true"></i></a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"  href='san-pham/samsung'> Samsung</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/apple'> Apple</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/huawei'> Huawei</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/xiaomi'> Xiaomi</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a href='san-pham/laptop' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>Laptop<i class="fa fa-angle-right pull-right" aria-hidden="true"></i></a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"  href='san-pham/hp'> HP</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/dell'> Dell</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/macbook'> Macbook</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/asus'> Asus</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a href='san-pham/phu-kien' class='nav-link'>Phụ kiện</a>
+                            </li>
+                          </ul>  
+                      </div><!-- /.navbar-collapse -->
+                  </div>
+              </nav>
+              <!--MD LG-->
+          </div>
+          <div class="col-md-12 col-lg-12 panel-right text-center hidden-xs" style="background: var(--primary)">
+              <ul class="menu-right" style="display: inline-block;">
+                  <li class="pull-left"><a href="">Trang chủ</a></li>
+                  <li class="pull-left"><a href="san-pham">Sản phẩm</a></li>
+                  <li class="pull-left"><a href='san-pham/dien-thoai'>Điện thoại</a></li><li class="pull-left"><a href='san-pham/laptop '>Laptop</a></li><li class="pull-left"><a href='san-pham/phu-kien '>Phụ kiện</a></li>                <li class="pull-left"><a href="tin-tuc/1">Tin tức</a></li>
+                  <li class="pull-left"><a href="gioi-thieu">Giới thiệu</a></li>
+                  <li class="pull-left"><a href="lien-he">Liên hệ</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="product-detail">
+	<div class="container">
+		<div class="products-wrap">
+			<form action="" method="post" id="ProductDetailsForm">
+				<div class="breadcrumbs">
+					<ul>
+						<li class="home">
+							<a href="trang-chu" title="Go to Home Page">Trang chủ</a>
+							<i class="fa fa-angle-right"></i>
+						</li>
+						<li class="category3">
+							<a href="http://localhost/DO-AN-TN-2019//san-pham/xiaomi" title="">Xiaomi</a>
+							<i class="fa fa-angle-right"></i>
+						</li>
+						<li class="product">Xiaomi Mi 9 Tím</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 listimg-desc-product float-start">
+
+					<div class="flexslider">
+						<div class="clearfix"></div>
+                        <ul class="slides">
+                            <li data-thumb="http://localhost/DO-AN-TN-2019/public/images/products/f016a6a0b3c651a1263b13f23e7c6aa5.jpg">
+                                <div class="thumb-image"><img src="http://localhost/DO-AN-TN-2019/public/images/products/f016a6a0b3c651a1263b13f23e7c6aa5.jpg"/></div>
+                            </li>
+                            <li data-thumb="http://localhost/DO-AN-TN-2019/public/images/products/2675a4cd565d020d5bb2ef292b3a4d96.jpg" style="width: 460.4px; float: left; display: block;" class="flex-active-slide">
+                                <div class="thumb-image"><img src="http://localhost/DO-AN-TN-2019/public/images/products/2675a4cd565d020d5bb2ef292b3a4d96.jpg"/></div>
+                            </li>
+                        </ul>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 float-start">
+					<div class="product-view-content">
+						<div class="product-view-name">
+							<h1>Xiaomi Mi 9 Tím</h1>
+						</div>
+						<div class="product-view-price">
+							<div class="pull-left">
+								<span class="price-label">Giá bán:</span>
+								<span class="price">11,990,000₫</span>
+							</div>
+              <div class="product-view-price-old">
+                <span class="price">22990000₫</span>
+                <span class="sale-flag">-10%</span>
+              </div>
+						</div>
+						<div class="product-status">
+							<p style=" float: left;margin-right: 10px;">Thương hiệu: Xiaomi</p>
+							<p>| Tình trạng: Còn hàng</p>
+						</div>
+						<div class="product-view-desc">
+							<h4>Mô tả:</h4>
+							<p>Điện thoại Xiaomi Mi 9 chính hãng - smartphone cao cấp cấu hình “khủng long”</p>
+						</div>
+						<div class="actions-qty">
+							<div class="actions-qty__button">
+								<button class="button btn-cart add_to_cart_detail detail-button" title="Mua ngay" type="button" aria-label="Mua ngay" onclick="onAddCart(13)">Mua ngay</button>
+							</div>
+						</div>
+						<!-- <div class="fk-boxs" id="km-all" data-comt="False">
+								<div id="km-detail">
+									<p class="fk-tit">Khuyến mại đặc biệt (SL có hạn)</p>
+									<div class="fk-main">
+										<div class="fk-sales">
+											</ul>
+											<ul>
+												<li>Tặng PMH Phụ Kiện 2,000,000đ (khi phiếu mua hàng trên 100,000,000 đ)</li>
+											</ul>
+											<ul>
+												<li>Tặng Flip Cover chính hãng Samsung (Áp dụng đến 26/05) <a href="#" target="_blank">Xem chi tiết</a>
+												</li>
+											</ul>
+											<ul>
+												<li>Giảm thêm 900,000đ khi mua combo sức khỏe - thời trang (Điện thoại + Samsung Watch + Samsung Buds) <a href="#" target="_blank">Xem chi tiết</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div> -->
+						<div style="margin-top: 20px;">
+							<b>Tình trạng</b>
+							<br />
+							<span>Sản phẩm đã được kiểm chứng đầy đủ. Đảm bảo an toàn</span>
+						</div>
+						<div style="margin-top: 20px;">
+							<b>Bảo hành</b>
+							<br />
+							<span>Bảo hành 30 ngày kể từ ngày mua hàng. 1 đổi 1 trong 7 ngày nếu có lỗi nhà sản xuất.</span><a href="#" style="color:red"> (Chi tiết)</a>
+						</div>
+					</div>
+				</div>
+                <div class="clearfix"></div>
+				<div class="product-v-desc col-md-10 col-12 col-xs-12">
+					<h3>Đặc điểm nổi bật</h3>
+					<p>
+						<em>
+							<strong>
+								(*) Điện thoại Xiaomi chính hãng, có sẵn tiếng Việt, đầy đủ ứng dụng của Google. Bạn có thể sử dụng ngay bình thường. Khác với các máy hàng xách tay: không có sẵn rom tiếng Việt, chặn các ứng dụng của Google
+							</strong>
+						</em>
+					</p>
+
+					<p>
+						Sau sự ra mắt thành công của hàng loạt smartphone cao cấp giá rẻ, Xiaomi tiếp tục trình làng chiếc điện thoại cao cấp mới với tên gọi là Xiaomi Mi 9. Là thiết bị được trang bị vi xử lý Snapdragon 855 mạnh nhất của
+						Qualcomm và camera sở hữu độ phân giải cao 48MP. Xiaomi Mi 9 là chiếc smartphone đầy hứa hẹn cho những ai thích chụp ảnh, với cấu hình camera rất cao.
+					</p>
+
+					<h3>Thiết kế, màn hình Xiaomi Mi 9 cao cấp, hiện đại</h3>
+
+					<p>
+						Xiaomi Mi 9 mang thiết kế đặc trưng của phiên bản tiền nhiệm, mặt lưng kính được cường lực bóng bẩy kết hợp với bộ khung nhôm chắc chắn tạo nên vẻ đẹp hài hòa khiến cho người dùng không khỏi rời mắt. Bên cạnh đó, mặt
+						lưng được vát cong nhẹ và bốn góc được bo tròn giúp cho cảm giác cầm nắm được tốt hơn. Hơn nữa, máy dùng màn hình khuyết đỉnh nhưng được làm nhỏ gọn hơn và có hình giọt nước giúp cho máy có cái nhìn tổng thể tinh tế
+						hơn Mi 8.
+					</p>
+
+					<p>
+						<img class="img-fluid" alt="" src="https://cellphones.com.vn/media/wysiwyg/mobile/xiaomi/xiaomi-mi-9-1.jpg"/>
+                        
+					</p>
+                    <p>
+                        Về màn hình, Xiaomi Mi 9 được trang bị màn hình có kích thước lớn 6.4 inch nhưng do được
+						tối ưu phần viền nên tổng thể máy vẫn rất vừa vặn trong lòng bàn tay. Hơn nữa, phần nội dung được tràn ra sát mép cạnh sẽ nâng cao việc trải nghiệm giải trí như xem phim hay chơi game. Ngoài ra, độ phân giải Full HD+
+						tỉ lệ 19:9 giúp hiển thị nhiều thông tin hơn và hỗ trợ tốt cho công việc lẫn giải trí hơn so với 18:9 thông thường
+                    </p>
+
+					<p><img class="img-fluid" alt="" src="https://cellphones.com.vn/media/wysiwyg/mobile/xiaomi/xiaomi-mi-9-2.jpg"/></p>
+
+					<p>
+						Hơn nữa, công nghệ màn hình AMOLED đem lại màu sắc hiển thị rực rỡ, nịnh mắt, độ sáng và độ tương phản cao, màu đen sâu và đậm và đặc biệt là khả năng tiết kiệm hơn so với các công nghệ màn hình khác qua đó cho thời
+						gian sử dụng vượt trội&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .
+					</p>
+
+					<h3>Chụp ảnh ấn tượng với ba camera của Xiaomi Mi 9</h3>
+
+					<p>
+						Xiaomi Mi 9 sở hữu đến ba camera ở mặt sau, bao gồm camera chính có độ phân giải cực khủng 48MP cảm biến Sony IMX 586, camera phụ lần lượt là 13MP và 16MP, cảm biến TOF 3D (Time-of-Flight có khả năng cảm biến nhận
+						diện chiều sâu, khoảng cách 3D). Xiaomi Mi 9 chắc chắn sẽ khiến cho người dùng hài lòng với những bức ảnh ưng ý.
+					</p>
+
+					<p><img class="img-fluid" alt="" src="https://cellphones.com.vn/media/wysiwyg/mobile/xiaomi/xiaomi-mi-9-3.jpg"></p>
+
+					<p>Còn camera trước của cũng được hãng đặc biệt chăm chút khi trang bị độ phân giải 24MP Sony IMX576 tích hợp công nghệ trí tuệ nhân tạo AI cùng đèn LED trợ sáng, mang lại những bức ảnh selfie rõ nét và chân thực.</p>
+
+					<h3>Hiệu năng mạnh mẽ và tính năng bảo mật vân tay dưới màn hình trên Xiaomi Mi 9</h3>
+
+					<p>
+						Xiaomi Mi 9 được tích hợp vi xử lý hiện đang đứng đầu về hiệu năng Snapdragon 855. Đây là chip có nhiều ưu điểm như: có khả năng truy cập dữ liệu với tốc độ 5G, CPU nhanh hơn tới 45%, xử lý đồ họa nhanh hơn 20% so
+						với người tiền nhiệm, Snapdragon 845, Quay video 4K chế độ Portrait, hỗ trợ VR trên di động với độ phân giải 8K và tốc độ 120 fps. Nhìn chung, Snapdragon 855 không chỉ mang lại cho người dùng khả năng xử lý mạnh hơn
+						mà còn nhiều trải nghiệm tuyệt vời hơn.
+					</p>
+
+					<p><img class="img-fluid" alt="" src="https://cellphones.com.vn/media/wysiwyg/mobile/xiaomi/xiaomi-mi-9-4.jpg"/></p>
+
+					<p>
+						Bên cạnh đó, RAM 6 GB cho người dùng khả năng chạy đa nhiệm mượt mà, đi cùng là bộ nhớ trong 64 GB giúp bạn lưu trữ dữ liệu cá nhân thỏa thích. Xiaomi Mi 9 được chạy trên hệ điều hành MIUI 10 dựa trên nền tảng
+						Android 9 Pie.
+					</p>
+
+					<p>
+						Điểm nổi bật của chiếc máy này là cảm biến vân tay dưới màn hình. Cảm biến này được đặt ngay dưới màn hình AMOLED và được hoạt động khi đầu ngón tay người dùng chạm lên bề mặt màn hình, cảm biến sẽ phát ra các tia
+						sáng đọc dấu vân tay, sau đó chuyển thông tin về bộ cảm biến quang học. Sau đó, bộ xử lý AI sẽ phân tích và ghi nhận 300 điểm khác biệt trên vân tay, như khoảng cách giữa các đường vân và cuối cùng là ghi nhận mở
+						khóa thiết bị.
+					</p>
+
+					<p>
+						Xiaomi Mi 9 sở hữu viên pin có dung lượng 3.700 mAh, cung cấp đủ điện năng để người dùng sử dụng trong vòng một ngày với các nhu cầu cơ bản. Ngoài ra, máy còn tích hợp công nghệ sạc nhanh sạc nhanh 32W để tiết kiệm
+						thời gian sạc pin.
+					</p>
+				</div>
+				<div class="product-comment product-v-desc">
+					<h3>Bình luận</h3>
+					<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+						<div
+							class="fb-comments fb_iframe_widget fb_iframe_widget_fluid_desktop"
+							data-href="http://localhost/DO-AN-TN-2019/xiaomi-mi-9-tim"
+							data-numposts="5"
+							fb-xfbml-state="rendered"
+							fb-iframe-plugin-query="app_id=&amp;container_width=940&amp;height=100&amp;href=http%3A%2F%2Flocalhost%2FDO-AN-TN-2019%2Fxiaomi-mi-9-tim&amp;locale=vi_VN&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=550"
+						>
+							<span style="vertical-align: bottom; width: 0px; height: 0px;">
+								<iframe
+									name="f5cf2e19815f7"
+									width="550px"
+									height="100px"
+									data-testid="fb:comments Facebook Social Plugin"
+									title="fb:comments Facebook Social Plugin"
+									frameborder="0"
+									allowtransparency="true"
+									allowfullscreen="true"
+									scrolling="no"
+									allow="encrypted-media"
+									src="https://web.facebook.com/v2.8/plugins/comments.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df118561a7337a5%26domain%3Dlocalhost%26is_canvas%3Dfalse%26origin%3Dhttp%253A%252F%252Flocalhost%252Ff188ae484bf2d5c%26relation%3Dparent.parent&amp;container_width=940&amp;height=100&amp;href=http%3A%2F%2Flocalhost%2FDO-AN-TN-2019%2Fxiaomi-mi-9-tim&amp;locale=vi_VN&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=550"
+									style="border: none; visibility: visible; width: 0px; height: 0px;"
+									class=""
+								></iframe>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="product-comment product-v-desc product">
+					<h3>Sản phẩm liên quan</h3>
+					<div class="product-container">
+						<div class="owl-carousel-related-prod owl-carousel owl-theme owl-loaded owl-drag">
+							<div class="owl-stage-outer">
+								<div class="owl-stage" style="left: 0px; width: 380px;">
+									<div class="owl-item active" style="width: 179.6px; margin-right: 10px;">
+										<div class="item">
+											<div class="product-lt">
+												<div class="lt-product-group-image">
+													<a href="redmi-note-7-32gb-pink" title="Redmi Note 7 32GB Pink">
+														<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/dff47577347f3fddcda326afac0c7f34.jpg" alt="" />
+													</a>
+
+													<div class="sale-percent">
+														<span class="text-sale-percent">Giảm 10%</span>
+													</div>
+												</div>
+
+												<div class="lt-product-group-info">
+													<a href="redmi-note-7-32gb-pink" title="Redmi Note 7 32GB Pink" style="text-align: left;">
+														<h3>Redmi Note 7 32GB Pink</h3>
+													</a>
+													<div class="price-box">
+														<p class="old-price">
+															<span class="price">4,990,000₫</span>
+														</p>
+														<p class="special-price">
+															<span class="price">4,550,000₫</span>
+														</p>
+													</div>
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="owl-item active" style="width: 179.6px; margin-right: 10px;">
+										<div class="item">
+											<div class="product-lt">
+												<div class="lt-product-group-image">
+													<a href="xiaomi-mi-8-64gb-den" title="Xiaomi Mi 8 64GB Đen">
+														<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/74ca778d59300c8f71236c436fa6dd9e.jpg" alt="" />
+													</a>
+												</div>
+
+												<div class="lt-product-group-info">
+													<a href="xiaomi-mi-8-64gb-den" title="Xiaomi Mi 8 64GB Đen" style="text-align: left;">
+														<h3>Xiaomi Mi 8 64GB Đen</h3>
+													</a>
+													<div class="price-box">
+														<p class="old-price">
+															<span class="price" style="color: #fff">8,490,000₫</span>
+														</p>
+														<p class="special-price">
+															<span class="price">8,490,000₫</span>
+														</p>
+													</div>
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+
+
+<footer id="footer">
+    <div class="news-social">
+        <div class="container">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-unstyled social float-end">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <div class="clearfix"></div>
+          </div>
+      </div>
+  </div>
+  <div class="top-footer">
+    <div class="container d-flex flex-wrap">
+        <div class="col-xs-12 col-sm-12 col-md-6 d-flex flex-wrap">
+            <div class="col-xs-12 col-sm-6">
+                <a href="trang-chu">
+                    <a href="#" class="logo"><i class="fa fa-laptop"></i>Smart store</a>
+                </a>
+                <div class="about-store">
+                 Shop BookStore. Chất lượng - giá cả hợp lý
+             </div>
+         </div>
+         <div class="col-xs-12 col-sm-6">
+            <div class="f-contact">
+                <h3>Thông tin liên hệ</h3>
+                <ul class="list-unstyled">
+                    <li class="clearfix">
+                        <i class="fa fa-map-marker"></i>
+                        <span>33 Trần Xuân Soạn, Quận 7, TPHCM</span>
+                    </li>
+                    <li class="clearfix">
+                        <i class="fa fa-phone"></i>
+                        <span>0978651616 - 0981.334455</span>
+                    </li>
+                    <li class="clearfix">
+                        <i class="fa fa-envelope"></i>
+                        <span><a href="mailto:vanhiepp1998@gmail.com">vanhiepp1998@gmail.com</a></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 d-flex flex-wrap">
+        <div class="col-xs-12 col-sm-6">
+            <h3 class="footer-title">HỖ TRỢ KHÁCH HÀNG</h3>
+            <ul class="list-unstyled linklists">
+                <li><a href="chinh-sach">Hướng dẫn thanh toán</a></li>          
+                <li><a href="chinh-sach">Hướng dẫn đặt hàng</a></li>
+                <li><a href="dieu-khoan">Điều khoản</a></li>                   
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <h3 class="footer-title">Địa chỉ cửa hàng</h3>
+            <ul class="list-unstyled linklists">
+                <li><a href="chinh-sach">88 Trung Kính,Cầu Giấy,Hà Nội</a></li>          
+                <li><a href="chinh-sach">57 Bạch Mai,Hai Bà Trưng,Hà Nội</a></li>
+                <li><a href="dieu-khoan">02 Nguyễn Tất Thành,Quận 4,TP.HCM</a></li>                   
+            </ul>
+        </div>
+   </div>
+</div>
+</div>
+</footer>
+
+<div id="scrolltop" class='scrolltop' onclick="topFunction()">
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
+    
+<!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom-owl.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/my-js.js"></script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Space</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section id="header">
+  <div class="container-lg d-flex justify-content-between">
+    <div class="col-xs-5 col-sm-5 col-md-4 col-lg-4 logo">
+      <a href="#" class="logo"><i class="fa fa-laptop"></i>Smart store</a>
+    </div>
+    <div class="col-md-5 col-lg-5 d-md-block  search">
+      <div class="contact-row">
+        <div class="phone inline"><i class="icon fa fa-phone"></i> (87) 888 888 868</div>
+        <div class="contact inline"><i class="icon fa fa-envelope"></i> sale.smart.store.2019@gmail.com</div>
+      </div>
+      <form action="search" method="get" role="form">
+        <div class="input-search">
+          <input type="text" class="form-control" id="search_text" name="search" placeholder="Nhập từ khóa để tìm kiếm..." />
+          <button><i class="fa fa-search"></i></button>
+        </div>
+      </form>
+    </div>
+    <div class="col-xs-7 col-sm-7 col-md-3 col-lg-3 d-md-block login-cart">
+      <!-- Cart -->
+      <div class="cart_header">
+        <a href="gio-hang" title="Giỏ hàng">
+          <span class="cart_header_icon">
+            <img src="http://localhost/DO-AN-TN-2019/public/images/cart2.png" alt="Cart" />
+          </span>
+          <span class="box_text">
+            <strong class="cart_header_count">Giỏ hàng<span>(0)</span></strong>
+            <span class="cart_price"><p>0 VNĐ</p></span>
+          </span>
+        </a>
+        <div class="cart_clone_box">
+          <div class="cart_box_wrap hidden">
+            <div class="cart_item original clearfix">
+              <div class="cart_item_image"></div>
+              <div class="cart_item_info">
+                <p class="cart_item_title"><a href="" title=""></a></p>
+                <span class="cart_item_quantity"></span>
+                <span class="cart_item_price"></span>
+                <span class="remove"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Cart -->
+      <!-- Account -->
+      <div class="user_login">
+        <a href="thong-tin-khach-hang" title="Tài khoản">
+          <div class="user_login_icon">
+            <img src="http://localhost/DO-AN-TN-2019/public/images/user.png" alt="Cart" />
+          </div>
+          <div class="box_text">
+            <strong>Tài khoản</strong>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-xs-7 col-sm-7 d-md-none d-flex justify-content-end align-items-center">
+      <div class="icon-cart-mobile">
+        <a href="gio-hang">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <span>(0)</span>
+        </a>
+      </div>
+      <div class="header-offcanvas">
+        <button class="nav-header navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Smart store</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <form action="search" method="get" role="form">
+              <div class="input-search">
+                <input type="text" class="form-control" id="search_text" name="search" placeholder="Nhập từ khóa để tìm kiếm..." />
+                <button><i class="fa fa-search"></i></button>
+              </div>
+            </form>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tin tức</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tài khoản</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Đăng kí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Đăng nhập</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="menu-pri">
+      <div class="container-md">
+          <div class="panel-left" style="background: #0f9ed8;">
+              <!--MOBILE-->
+              <nav class="navbar navbar-default d-md-none d-lg-none" role="navigation">
+                  <div class="container-fluid" style="background-color: #0f9ed8;">
+                      <div class="navbar-header">
+                          <button type="button" class="navbar-menu navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-ex1-collapse">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <a class="navbar-brand" style="color: #fff;" href="#">Danh mục sản phẩm</a>
+                      </div>
+                      <div class="collapse navbar-collapse navbar-ex1-collapse d-md-none d-lg-none">
+
+                          <ul class="nav navbar-nav">
+                            <li class="nav-item dropdown">
+                              <a href='san-pham/dien-thoai' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>Điện thoại<i class="fa fa-angle-right pull-right" aria-hidden="true"></i></a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"  href='san-pham/samsung'> Samsung</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/apple'> Apple</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/huawei'> Huawei</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/xiaomi'> Xiaomi</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a href='san-pham/laptop' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>Laptop<i class="fa fa-angle-right pull-right" aria-hidden="true"></i></a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"  href='san-pham/hp'> HP</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/dell'> Dell</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/macbook'> Macbook</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/asus'> Asus</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a href='san-pham/phu-kien' class='nav-link'>Phụ kiện</a>
+                            </li>
+                          </ul>  
+                      </div><!-- /.navbar-collapse -->
+                  </div>
+              </nav>
+              <!--MD LG-->
+          </div>
+          <div class="col-md-12 col-lg-12 panel-right text-center hidden-xs" style="background: var(--primary)">
+              <ul class="menu-right" style="display: inline-block;">
+                  <li class="pull-left"><a href="">Trang chủ</a></li>
+                  <li class="pull-left"><a href="san-pham">Sản phẩm</a></li>
+                  <li class="pull-left"><a href='san-pham/dien-thoai'>Điện thoại</a></li><li class="pull-left"><a href='san-pham/laptop '>Laptop</a></li><li class="pull-left"><a href='san-pham/phu-kien '>Phụ kiện</a></li>                <li class="pull-left"><a href="tin-tuc/1">Tin tức</a></li>
+                  <li class="pull-left"><a href="gioi-thieu">Giới thiệu</a></li>
+                  <li class="pull-left"><a href="lien-he">Liên hệ</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</section>
+
+<form action="http://localhost/DO-AN-TN-2019/dang-nhap.html" method="post" accept-charset="utf-8">
+	<div class="container">
+		<div class="products-wrap">
+			<div class="container d-flex justify-content-center">
+        <div id="login" class="col-md-6 col-sm-9 col-xs-12">
+          <div class="acctitle acctitlec">Đăng nhập</div>
+          <div class="acc_content clearfix" style="display: block;">
+            <div class="col_full">
+              <label for="login-form-username">Tài khoản:<span class="require_symbol">* </span></label>
+              <input type="text" id="login-form-username" name="username" value="" class="form-control" />
+              <div class="error" id="password_error"></div>
+            </div>
+            <div class="col_full">
+              <label for="login-form-password">Mật khẩu:<span class="require_symbol">* </span></label>
+              <input type="password" id="login-form-password" name="password" value="" class="form-control" />
+              <div class="error" id="password_error"></div>
+            </div>
+            <div class="col_full nobottommargin">
+              <button class="button button-3d button-black nomargin pull-left" id="login-form-submit" name="login-form-submit" type="submit" value="login">Đăng nhập</button>
+              <ul class="pull-right">
+                <li><a href="quen-mat-khau" class="fright">Quên mật khẩu?</a></li>
+                <li><a href="http://localhost/DO-AN-TN-2019/dang-ky" class="fright">Người dùng mới? Đăng ký tài khoản</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+</form>
+
+
+
+<footer id="footer">
+    <div class="news-social">
+        <div class="container">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-unstyled social float-end">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <div class="clearfix"></div>
+          </div>
+      </div>
+  </div>
+  <div class="top-footer">
+    <div class="container d-flex flex-wrap">
+        <div class="col-xs-12 col-sm-12 col-md-6 d-flex flex-wrap">
+            <div class="col-xs-12 col-sm-6">
+                <a href="trang-chu">
+                    <a href="#" class="logo"><i class="fa fa-laptop"></i>Smart store</a>
+                </a>
+                <div class="about-store">
+                 Shop BookStore. Chất lượng - giá cả hợp lý
+             </div>
+         </div>
+         <div class="col-xs-12 col-sm-6">
+            <div class="f-contact">
+                <h3>Thông tin liên hệ</h3>
+                <ul class="list-unstyled">
+                    <li class="clearfix">
+                        <i class="fa fa-map-marker"></i>
+                        <span>33 Trần Xuân Soạn, Quận 7, TPHCM</span>
+                    </li>
+                    <li class="clearfix">
+                        <i class="fa fa-phone"></i>
+                        <span>0978651616 - 0981.334455</span>
+                    </li>
+                    <li class="clearfix">
+                        <i class="fa fa-envelope"></i>
+                        <span><a href="mailto:vanhiepp1998@gmail.com">vanhiepp1998@gmail.com</a></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 d-flex flex-wrap">
+        <div class="col-xs-12 col-sm-6">
+            <h3 class="footer-title">HỖ TRỢ KHÁCH HÀNG</h3>
+            <ul class="list-unstyled linklists">
+                <li><a href="chinh-sach">Hướng dẫn thanh toán</a></li>          
+                <li><a href="chinh-sach">Hướng dẫn đặt hàng</a></li>
+                <li><a href="dieu-khoan">Điều khoản</a></li>                   
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <h3 class="footer-title">Địa chỉ cửa hàng</h3>
+            <ul class="list-unstyled linklists">
+                <li><a href="chinh-sach">88 Trung Kính,Cầu Giấy,Hà Nội</a></li>          
+                <li><a href="chinh-sach">57 Bạch Mai,Hai Bà Trưng,Hà Nội</a></li>
+                <li><a href="dieu-khoan">02 Nguyễn Tất Thành,Quận 4,TP.HCM</a></li>                   
+            </ul>
+        </div>
+   </div>
+</div>
+</div>
+</footer>
+
+<div id="scrolltop" class='scrolltop' onclick="topFunction()">
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
+    
+<!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom-owl.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/my-js.js"></script>
+</body>
+</html>

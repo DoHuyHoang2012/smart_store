@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Space</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section id="header">
+  <div class="container-lg d-flex justify-content-between">
+    <div class="col-xs-5 col-sm-5 col-md-4 col-lg-4 logo">
+      <a href="#" class="logo"><i class="fa fa-laptop"></i>Smart store</a>
+    </div>
+    <div class="col-md-5 col-lg-5 d-md-block  search">
+      <div class="contact-row">
+        <div class="phone inline"><i class="icon fa fa-phone"></i> (87) 888 888 868</div>
+        <div class="contact inline"><i class="icon fa fa-envelope"></i> sale.smart.store.2019@gmail.com</div>
+      </div>
+      <form action="search" method="get" role="form">
+        <div class="input-search">
+          <input type="text" class="form-control" id="search_text" name="search" placeholder="Nhập từ khóa để tìm kiếm..." />
+          <button><i class="fa fa-search"></i></button>
+        </div>
+      </form>
+    </div>
+    <div class="col-xs-7 col-sm-7 col-md-3 col-lg-3 d-md-block login-cart">
+      <!-- Cart -->
+      <div class="cart_header">
+        <a href="gio-hang" title="Giỏ hàng">
+          <span class="cart_header_icon">
+            <img src="http://localhost/DO-AN-TN-2019/public/images/cart2.png" alt="Cart" />
+          </span>
+          <span class="box_text">
+            <strong class="cart_header_count">Giỏ hàng<span>(0)</span></strong>
+            <span class="cart_price"><p>0 VNĐ</p></span>
+          </span>
+        </a>
+        <div class="cart_clone_box">
+          <div class="cart_box_wrap hidden">
+            <div class="cart_item original clearfix">
+              <div class="cart_item_image"></div>
+              <div class="cart_item_info">
+                <p class="cart_item_title"><a href="" title=""></a></p>
+                <span class="cart_item_quantity"></span>
+                <span class="cart_item_price"></span>
+                <span class="remove"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Cart -->
+      <!-- Account -->
+      <div class="user_login">
+        <a href="thong-tin-khach-hang" title="Tài khoản">
+          <div class="user_login_icon">
+            <img src="http://localhost/DO-AN-TN-2019/public/images/user.png" alt="Cart" />
+          </div>
+          <div class="box_text">
+            <strong>Tài khoản</strong>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-xs-7 col-sm-7 d-md-none d-flex justify-content-end align-items-center">
+      <div class="icon-cart-mobile">
+        <a href="gio-hang">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <span>(0)</span>
+        </a>
+      </div>
+      <div class="header-offcanvas">
+        <button class="nav-header navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Smart store</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <form action="search" method="get" role="form">
+              <div class="input-search">
+                <input type="text" class="form-control" id="search_text" name="search" placeholder="Nhập từ khóa để tìm kiếm..." />
+                <button><i class="fa fa-search"></i></button>
+              </div>
+            </form>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tin tức</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tài khoản</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Đăng kí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Đăng nhập</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="menu-pri">
+      <div class="container-md">
+          <div class="panel-left" style="background: #0f9ed8;">
+              <!--MOBILE-->
+              <nav class="navbar navbar-default d-md-none d-lg-none" role="navigation">
+                  <div class="container-fluid" style="background-color: #0f9ed8;">
+                      <div class="navbar-header">
+                          <button type="button" class="navbar-menu navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-ex1-collapse">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <a class="navbar-brand" style="color: #fff;" href="#">Danh mục sản phẩm</a>
+                      </div>
+                      <div class="collapse navbar-collapse navbar-ex1-collapse d-md-none d-lg-none">
+
+                          <ul class="nav navbar-nav">
+                            <li class="nav-item dropdown">
+                              <a href='san-pham/dien-thoai' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>Điện thoại<i class="fa fa-angle-right pull-right" aria-hidden="true"></i></a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"  href='san-pham/samsung'> Samsung</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/apple'> Apple</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/huawei'> Huawei</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/xiaomi'> Xiaomi</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a href='san-pham/laptop' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>Laptop<i class="fa fa-angle-right pull-right" aria-hidden="true"></i></a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"  href='san-pham/hp'> HP</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/dell'> Dell</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/macbook'> Macbook</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/asus'> Asus</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a href='san-pham/phu-kien' class='nav-link'>Phụ kiện</a>
+                            </li>
+                          </ul>  
+                      </div><!-- /.navbar-collapse -->
+                  </div>
+              </nav>
+              <!--MD LG-->
+          </div>
+          <div class="col-md-12 col-lg-12 panel-right text-center hidden-xs" style="background: var(--primary)">
+              <ul class="menu-right" style="display: inline-block;">
+                  <li class="pull-left"><a href="">Trang chủ</a></li>
+                  <li class="pull-left"><a href="san-pham">Sản phẩm</a></li>
+                  <li class="pull-left"><a href='san-pham/dien-thoai'>Điện thoại</a></li><li class="pull-left"><a href='san-pham/laptop '>Laptop</a></li><li class="pull-left"><a href='san-pham/phu-kien '>Phụ kiện</a></li>                <li class="pull-left"><a href="tin-tuc/1">Tin tức</a></li>
+                  <li class="pull-left"><a href="gioi-thieu">Giới thiệu</a></li>
+                  <li class="pull-left"><a href="lien-he">Liên hệ</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="product-all" class="collection">
+	<div class="banner-product">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<img src="http://localhost/DO-AN-TN-2019/public/images/sp.png" />
+			</div>
+		</div>
+	</div>
+	<div class="slider">
+		<div class="container d-flex flex-wrap">
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+				<div class="list-menu pull-left col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="widget" style="margin: 0px; min-height: 0px;">
+						<p>Danh mục sản phẩm</p>
+					</div>
+
+					<ul class="main-ul">
+						<li>
+							<a href="san-pham/dien-thoai " title=" Điện thoại">Điện thoại<i class="fa fa-angle-right pull-right" aria-hidden="true"></i></a>
+							<ul class="sub">
+								<li><a href="san-pham/samsung " title=" Samsung "> Samsung</a></li>
+								<li><a href="san-pham/apple " title=" Apple "> Apple</a></li>
+								<li><a href="san-pham/huawei " title=" Huawei "> Huawei</a></li>
+								<li><a href="san-pham/xiaomi " title=" Xiaomi "> Xiaomi</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="san-pham/laptop " title=" Laptop">Laptop<i class="fa fa-angle-right pull-right" aria-hidden="true"></i></a>
+							<ul class="sub">
+								<li><a href="san-pham/hp " title=" HP "> HP</a></li>
+								<li><a href="san-pham/dell " title=" Dell "> Dell</a></li>
+								<li><a href="san-pham/macbook " title=" Macbook "> Macbook</a></li>
+								<li><a href="san-pham/asus " title=" Asus "> Asus</a></li>
+							</ul>
+						</li>
+						<li><a href="san-pham/phu-kien " title=" Phụ kiện">Phụ kiện</a></li>
+					</ul>
+				</div>
+                <div class="clearfix"></div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 products-sale-off">
+					<div class="widget">
+						<p>Sản phẩm khuyến mãi</p>
+						<div class="panel-left-body">
+							<div id="post-list-footer" class="sidebar_menu">
+								<div class="spost clearfix">
+									<div class="entry-image">
+										<a href="samsung-galaxy-s10-white" title=" Samsung Galaxy S10 White"><img src="http://localhost/DO-AN-TN-2019/public/images/products/b4b312066a992ca228092a0fd28d66d4.jpg#6143e44c305aec0801910443dc700a6c.png" /></a>
+									</div>
+									<div class="entry-c">
+										<div class="entry-title"><a class="ws-nw overflow ellipsis" href="samsung-galaxy-s10-white" title=" Samsung Galaxy S10 White">Samsung Galaxy S10 White</a></div>
+										<ul class="entry-meta">
+											<li class="color"><ins>15,400,000₫</ins><del>20,900,000₫</del></li>
+										</ul>
+									</div>
+								</div>
+								<div class="spost clearfix">
+									<div class="entry-image">
+										<a href="apple-iphone-xr-128gb-black-chinh-hang" title=" Apple iPhone XR 128GB Black Chính hãng">
+											<img src="http://localhost/DO-AN-TN-2019/public/images/products/b6a64d0316b06e976ad4324a4063e341.jpg#13b9fc538c72f97683304fcd8c7194fb.jpg#2aa38bbfc27b9aac9d958fb4898bbe08.png" />
+										</a>
+									</div>
+									<div class="entry-c">
+										<div class="entry-title">
+											<a class="ws-nw overflow ellipsis" href="apple-iphone-xr-128gb-black-chinh-hang" title=" Apple iPhone XR 128GB Black Chính hãng">Apple iPhone XR 128GB Black Chính hãng</a>
+										</div>
+										<ul class="entry-meta">
+											<li class="color"><ins>20,000,000₫</ins><del>21,000,000₫</del></li>
+										</ul>
+									</div>
+								</div>
+								<div class="spost clearfix">
+									<div class="entry-image">
+										<a href="samsung-galaxy-s8-chinh-hang" title=" Samsung Galaxy S8+ Chính hãng">
+											<img src="http://localhost/DO-AN-TN-2019/public/images/products/b96fbb511e7d5d4424ca2eae52a3eb28.jpg#d5276929094f87e470ca2d957917c59d.jpg#ab6c2dc71ee55a8e3aa58b9dfe6ec896.jpg#d7ed3e9c74108cfa3d260b8b097ca6a1.jpg" />
+										</a>
+									</div>
+									<div class="entry-c">
+										<div class="entry-title"><a class="ws-nw overflow ellipsis" href="samsung-galaxy-s8-chinh-hang" title=" Samsung Galaxy S8+ Chính hãng">Samsung Galaxy S8+ Chính hãng</a></div>
+										<ul class="entry-meta">
+											<li class="color"><ins>12,700,000₫</ins><del>17,900,000₫</del></li>
+										</ul>
+									</div>
+								</div>
+								<div class="spost clearfix">
+									<div class="entry-image">
+										<a href="samsung-galaxy-note-9-xanh-den" title=" Samsung Galaxy Note 9 Xanh đen"><img src="http://localhost/DO-AN-TN-2019/public/images/products/d153c29c6407ab35d622591d57ab5e68.jpg#7b8e18f37db91158adc2bad1c146f40d.jpg" /></a>
+									</div>
+									<div class="entry-c">
+										<div class="entry-title"><a class="ws-nw overflow ellipsis" href="samsung-galaxy-note-9-xanh-den" title=" Samsung Galaxy Note 9 Xanh đen">Samsung Galaxy Note 9 Xanh đen</a></div>
+										<ul class="entry-meta">
+											<li class="color"><ins>18,900,000₫</ins><del>22,980,000₫</del></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 product-content">
+				<div class="product-wrap">
+					<div class="collection__title">
+						<h1><span>Laptop</span></h1>
+						<div id="sort-by" class="hidden-xs">
+							<label class="left hidden-xs" for="sort-select">Sắp xếp theo: </label>
+							<form class="form-inline form-viewpro">
+								<div class="form-group">
+									<select id="sortControl" class="form-select" onchange="sortby(this.value)">
+										<option value="number_buy-desc">Bán chạy nhất</option>
+										<option value="name-asc">A → Z</option>
+										<option value="name-desc">Z → A</option>
+										<option value="price-asc">Giá tăng dần</option>
+										<option value="price-desc" selected="">Giá giảm dần</option>
+										<option value="created-desc">Hàng mới nhất</option>
+										<option value="created-asc">Hàng cũ nhất</option>
+									</select>
+								</div>
+							</form>
+						</div>
+						<div class="collection-filter" id="list-product">
+							<div class="category-products">
+								<div class="products-grid d-flex flex-wrap w-100">
+									<div class="col-md-3 col-lg-3 col-xs-6 col-6">
+										<div class="product-lt">
+											<div class="lt-product-group-image">
+												<a href="laptop-apple-macbook-air-2018-i5-8gb-128gb" title="Laptop Apple Macbook Air 2018 i5/8GB/128GB">
+													<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/a7a0053cc6d2b90f2602dc1d9b77684b.jpg" alt="" />
+												</a>
+											</div>
+
+											<div class="lt-product-group-info">
+												<a href="laptop-apple-macbook-air-2018-i5-8gb-128gb" title="Laptop Apple Macbook Air 2018 i5/8GB/128GB">
+													<h3>Laptop Apple Macbook Air 2018 i5/8GB/128GB</h3>
+												</a>
+												<div class="price-box">
+													<p class="old-price">
+														<span class="price" style="color: #fff">39,100,000₫</span>
+													</p>
+													<p class="special-price">
+														<span class="price">39,100,000₫</span>
+													</p>
+												</div>
+												<div class="clear"></div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 col-xs-6 col-6">
+										<div class="product-lt">
+											<div class="lt-product-group-image">
+												<a href="apple-macbook-pro-13-inch-128gb-mpxq2-chinh-hang" title="Apple MacBook Pro 13 inch 128GB MPXQ2 Chính hãng">
+													<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/441c401340a20e12eb44d159e8cbd72a.jpg" alt="" />
+												</a>
+											</div>
+
+											<div class="lt-product-group-info">
+												<a href="apple-macbook-pro-13-inch-128gb-mpxq2-chinh-hang" title="Apple MacBook Pro 13 inch 128GB MPXQ2 Chính hãng">
+													<h3>Apple MacBook Pro 13 inch 128GB MPXQ2 Chính hãng</h3>
+												</a>
+												<div class="price-box">
+													<p class="old-price">
+														<span class="price" style="color: #fff">29,900,000₫</span>
+													</p>
+													<p class="special-price">
+														<span class="price">29,900,000₫</span>
+													</p>
+												</div>
+												<div class="clear"></div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 col-xs-6 col-6">
+										<div class="product-lt">
+											<div class="lt-product-group-image">
+												<a href="laptop-asus-zenbook-14-ux433fa-a6113t" title="Laptop Asus Zenbook 14 UX433FA-A6113T">
+													<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/057abb3c59a567ad0a730422fe2fe2a0.jpg" alt="" />
+												</a>
+
+												<div class="sale-percent">
+													<span class="text-sale-percent">Giảm 10%</span>
+												</div>
+											</div>
+
+											<div class="lt-product-group-info">
+												<a href="laptop-asus-zenbook-14-ux433fa-a6113t" title="Laptop Asus Zenbook 14 UX433FA-A6113T">
+													<h3>Laptop Asus Zenbook 14 UX433FA-A6113T</h3>
+												</a>
+												<div class="price-box">
+													<p class="old-price">
+														<span class="price">22,990,000₫</span>
+													</p>
+													<p class="special-price">
+														<span class="price">22,490,000₫</span>
+													</p>
+												</div>
+												<div class="clear"></div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 col-xs-6 col-6">
+										<div class="product-lt">
+											<div class="lt-product-group-image">
+												<a href="laptop-dell-vostro-15-5581-70175950" title="Laptop Dell Vostro 15 5581 (70175950)">
+													<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/7041fb19db5fc6b0232f6b29914424d6.jpg" alt="" />
+												</a>
+
+												<div class="sale-percent">
+													<span class="text-sale-percent">Giảm 10%</span>
+												</div>
+											</div>
+
+											<div class="lt-product-group-info">
+												<a href="laptop-dell-vostro-15-5581-70175950" title="Laptop Dell Vostro 15 5581 (70175950)">
+													<h3>Laptop Dell Vostro 15 5581 (70175950)</h3>
+												</a>
+												<div class="price-box">
+													<p class="old-price">
+														<span class="price">18,790,000₫</span>
+													</p>
+													<p class="special-price">
+														<span class="price">16,790,000₫</span>
+													</p>
+												</div>
+												<div class="clear"></div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 col-xs-6 col-6">
+										<div class="product-lt">
+											<div class="lt-product-group-image">
+												<a href="laptop-dell-inspiron-15-3576-70157552" title="Laptop Dell Inspiron 15 3576 (70157552)">
+													<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/ed89f871f145b6b99099923be292f9ba.jpg" alt="" />
+												</a>
+											</div>
+
+											<div class="lt-product-group-info">
+												<a href="laptop-dell-inspiron-15-3576-70157552" title="Laptop Dell Inspiron 15 3576 (70157552)">
+													<h3>Laptop Dell Inspiron 15 3576 (70157552)</h3>
+												</a>
+												<div class="price-box">
+													<p class="old-price">
+														<span class="price" style="color: #fff">14,900,000₫</span>
+													</p>
+													<p class="special-price">
+														<span class="price">14,900,000₫</span>
+													</p>
+												</div>
+												<div class="clear"></div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 col-xs-6 col-6">
+										<div class="product-lt">
+											<div class="lt-product-group-image">
+												<a href="laptop-hp-pavilion-15-cs0014tu-4mf01pa" title="Laptop HP Pavilion 15-cs0014TU 4MF01PA">
+													<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/2fffae1beec0f68c13e8c9864445e29d.jpg" alt="" />
+												</a>
+
+												<div class="sale-percent">
+													<span class="text-sale-percent">Giảm 10%</span>
+												</div>
+											</div>
+
+											<div class="lt-product-group-info">
+												<a href="laptop-hp-pavilion-15-cs0014tu-4mf01pa" title="Laptop HP Pavilion 15-cs0014TU 4MF01PA">
+													<h3>Laptop HP Pavilion 15-cs0014TU 4MF01PA</h3>
+												</a>
+												<div class="price-box">
+													<p class="old-price">
+														<span class="price">13,890,000₫</span>
+													</p>
+													<p class="special-price">
+														<span class="price">11,890,000₫</span>
+													</p>
+												</div>
+												<div class="clear"></div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 col-xs-6 col-6">
+										<div class="product-lt">
+											<div class="lt-product-group-image">
+												<a href="laptop-asus-vivobook-15-a512fa-ej117t" title="Laptop Asus Vivobook 15 A512FA-EJ117T">
+													<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/d2c4ca51c189e719b725035e7586f871.jpg" alt="" />
+												</a>
+											</div>
+
+											<div class="lt-product-group-info">
+												<a href="laptop-asus-vivobook-15-a512fa-ej117t" title="Laptop Asus Vivobook 15 A512FA-EJ117T">
+													<h3>Laptop Asus Vivobook 15 A512FA-EJ117T</h3>
+												</a>
+												<div class="price-box">
+													<p class="old-price">
+														<span class="price" style="color: #fff">11,490,000₫</span>
+													</p>
+													<p class="special-price">
+														<span class="price">11,490,000₫</span>
+													</p>
+												</div>
+												<div class="clear"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="text-center pull-right">
+                                    <ul class="pagination">                          
+                                    </ul>
+                                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<footer id="footer">
+    <div class="news-social">
+        <div class="container">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-unstyled social float-end">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <div class="clearfix"></div>
+          </div>
+      </div>
+  </div>
+  <div class="top-footer">
+    <div class="container d-flex flex-wrap">
+        <div class="col-xs-12 col-sm-12 col-md-6 d-flex flex-wrap">
+            <div class="col-xs-12 col-sm-6">
+                <a href="trang-chu">
+                    <a href="#" class="logo"><i class="fa fa-laptop"></i>Smart store</a>
+                </a>
+                <div class="about-store">
+                 Shop BookStore. Chất lượng - giá cả hợp lý
+             </div>
+         </div>
+         <div class="col-xs-12 col-sm-6">
+            <div class="f-contact">
+                <h3>Thông tin liên hệ</h3>
+                <ul class="list-unstyled">
+                    <li class="clearfix">
+                        <i class="fa fa-map-marker"></i>
+                        <span>33 Trần Xuân Soạn, Quận 7, TPHCM</span>
+                    </li>
+                    <li class="clearfix">
+                        <i class="fa fa-phone"></i>
+                        <span>0978651616 - 0981.334455</span>
+                    </li>
+                    <li class="clearfix">
+                        <i class="fa fa-envelope"></i>
+                        <span><a href="mailto:vanhiepp1998@gmail.com">vanhiepp1998@gmail.com</a></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 d-flex flex-wrap">
+        <div class="col-xs-12 col-sm-6">
+            <h3 class="footer-title">HỖ TRỢ KHÁCH HÀNG</h3>
+            <ul class="list-unstyled linklists">
+                <li><a href="chinh-sach">Hướng dẫn thanh toán</a></li>          
+                <li><a href="chinh-sach">Hướng dẫn đặt hàng</a></li>
+                <li><a href="dieu-khoan">Điều khoản</a></li>                   
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <h3 class="footer-title">Địa chỉ cửa hàng</h3>
+            <ul class="list-unstyled linklists">
+                <li><a href="chinh-sach">88 Trung Kính,Cầu Giấy,Hà Nội</a></li>          
+                <li><a href="chinh-sach">57 Bạch Mai,Hai Bà Trưng,Hà Nội</a></li>
+                <li><a href="dieu-khoan">02 Nguyễn Tất Thành,Quận 4,TP.HCM</a></li>                   
+            </ul>
+        </div>
+   </div>
+</div>
+</div>
+</footer>
+
+<div id="scrolltop" class='scrolltop' onclick="topFunction()">
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
+    
+<!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom-owl.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+</html>

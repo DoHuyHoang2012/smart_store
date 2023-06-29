@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Space</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section id="header">
+  <div class="container-lg d-flex justify-content-between">
+    <div class="col-xs-5 col-sm-5 col-md-4 col-lg-4 logo">
+      <a href="#" class="logo"><i class="fa fa-laptop"></i>Smart store</a>
+    </div>
+    <div class="col-md-5 col-lg-5 d-md-block  search">
+      <div class="contact-row">
+        <div class="phone inline"><i class="icon fa fa-phone"></i> (87) 888 888 868</div>
+        <div class="contact inline"><i class="icon fa fa-envelope"></i> sale.smart.store.2019@gmail.com</div>
+      </div>
+      <form action="search" method="get" role="form">
+        <div class="input-search">
+          <input type="text" class="form-control" id="search_text" name="search" placeholder="Nhập từ khóa để tìm kiếm..." />
+          <button><i class="fa fa-search"></i></button>
+        </div>
+      </form>
+    </div>
+    <div class="col-xs-7 col-sm-7 col-md-3 col-lg-3 d-md-block login-cart">
+      <!-- Cart -->
+      <div class="cart_header">
+        <a href="gio-hang" title="Giỏ hàng">
+          <span class="cart_header_icon">
+            <img src="http://localhost/DO-AN-TN-2019/public/images/cart2.png" alt="Cart" />
+          </span>
+          <span class="box_text">
+            <strong class="cart_header_count">Giỏ hàng<span>(0)</span></strong>
+            <span class="cart_price"><p>0 VNĐ</p></span>
+          </span>
+        </a>
+        <div class="cart_clone_box">
+          <div class="cart_box_wrap hidden">
+            <div class="cart_item original clearfix">
+              <div class="cart_item_image"></div>
+              <div class="cart_item_info">
+                <p class="cart_item_title"><a href="" title=""></a></p>
+                <span class="cart_item_quantity"></span>
+                <span class="cart_item_price"></span>
+                <span class="remove"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Cart -->
+      <!-- Account -->
+      <div class="user_login">
+        <a href="thong-tin-khach-hang" title="Tài khoản">
+          <div class="user_login_icon">
+            <img src="http://localhost/DO-AN-TN-2019/public/images/user.png" alt="Cart" />
+          </div>
+          <div class="box_text">
+            <strong>Tài khoản</strong>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-xs-7 col-sm-7 d-md-none d-flex justify-content-end align-items-center">
+      <div class="icon-cart-mobile">
+        <a href="gio-hang">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <span>(0)</span>
+        </a>
+      </div>
+      <div class="header-offcanvas">
+        <button class="nav-header navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Smart store</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <form action="search" method="get" role="form">
+              <div class="input-search">
+                <input type="text" class="form-control" id="search_text" name="search" placeholder="Nhập từ khóa để tìm kiếm..." />
+                <button><i class="fa fa-search"></i></button>
+              </div>
+            </form>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tin tức</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tài khoản</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Đăng kí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Đăng nhập</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="menu-pri">
+      <div class="container-md">
+          <div class="panel-left" style="background: #0f9ed8;">
+              <!--MOBILE-->
+              <nav class="navbar navbar-default d-md-none d-lg-none" role="navigation">
+                  <div class="container-fluid" style="background-color: #0f9ed8;">
+                      <div class="navbar-header">
+                          <button type="button" class="navbar-menu navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-ex1-collapse">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <a class="navbar-brand" style="color: #fff;" href="#">Danh mục sản phẩm</a>
+                      </div>
+                      <div class="collapse navbar-collapse navbar-ex1-collapse d-md-none d-lg-none">
+
+                          <ul class="nav navbar-nav">
+                            <li class="nav-item dropdown">
+                              <a href='san-pham/dien-thoai' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>Điện thoại<i class="fa fa-angle-right pull-right" aria-hidden="true"></i></a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"  href='san-pham/samsung'> Samsung</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/apple'> Apple</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/huawei'> Huawei</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/xiaomi'> Xiaomi</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a href='san-pham/laptop' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>Laptop<i class="fa fa-angle-right pull-right" aria-hidden="true"></i></a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"  href='san-pham/hp'> HP</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/dell'> Dell</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/macbook'> Macbook</a></li>
+                                <li><a class="dropdown-item"  href='san-pham/asus'> Asus</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a href='san-pham/phu-kien' class='nav-link'>Phụ kiện</a>
+                            </li>
+                          </ul>  
+                      </div><!-- /.navbar-collapse -->
+                  </div>
+              </nav>
+              <!--MD LG-->
+          </div>
+          <div class="col-md-12 col-lg-12 panel-right text-center hidden-xs" style="background: #0f9ed8;">
+              <ul class="menu-right" style="display: inline-block;">
+                  <li class="pull-left"><a href="">Trang chủ</a></li>
+                  <li class="pull-left"><a href="san-pham">Sản phẩm</a></li>
+                  <li class="pull-left"><a href='san-pham/dien-thoai'>Điện thoại</a></li><li class="pull-left"><a href='san-pham/laptop '>Laptop</a></li><li class="pull-left"><a href='san-pham/phu-kien '>Phụ kiện</a></li>                <li class="pull-left"><a href="tin-tuc/1">Tin tức</a></li>
+                  <li class="pull-left"><a href="gioi-thieu">Giới thiệu</a></li>
+                  <li class="pull-left"><a href="lien-he">Liên hệ</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="menu-slider">
+	<div class="slider">
+		<div class="container d-flex">
+      <div class="col-md-3 col-lg-3 list-menu hidden-xs">
+        <img style="width: 100%; height: auto;" src="http://localhost/DO-AN-TN-2019/public/images/blog_banner_2.png">
+        <img style="width: 100%; height: auto;" src="http://localhost/DO-AN-TN-2019/public/images/blog_banner_3.png">
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 slider-main">
+
+        <div class="owl-carousel owl-carousel-slider owl-theme">
+          <div class="item"><img src="http://localhost/DO-AN-TN-2019/public/images/banners/default.png" /></div>
+          <div class="item"><img src="http://localhost/DO-AN-TN-2019/public/images/banners/iphone-banner.jpg" /></div>
+          <div class="item"><img src="http://localhost/DO-AN-TN-2019/public/images/banners/xsmaxbanner.png" /></div>
+        </div>
+      </div>
+    
+		</div>
+	</div>
+	<div class="container py-4">
+		<div class="sale-title">
+			<span>SẢN PHẨM KHUYẾN MÃI HOT</span>
+		</div>
+    <div class="owl-carousel owl-carousel-product owl-theme">
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="samsung-galaxy-s10-white" title="Samsung Galaxy S10 White">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/15e1004aae0ad9dc632fab1c2c49a46f.jpg" alt="" />
+						</a>
+
+						<div class="sale-percent">
+							<span class="text-sale-percent">Giảm 20%</span>
+						</div>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="samsung-galaxy-s10-white" title="Samsung Galaxy S10 White" style="text-align: left;">
+							<h3>Samsung Galaxy S10 White</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price">20,900,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">15,400,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="apple-iphone-xr-128gb-black-chinh-hang" title="Apple iPhone XR 128GB Black Chính hãng">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/1c8f01e59cf56a2c2e946b58f64f7624.jpg" alt="" />
+						</a>
+
+						<div class="sale-percent">
+							<span class="text-sale-percent">Giảm 20%</span>
+						</div>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="apple-iphone-xr-128gb-black-chinh-hang" title="Apple iPhone XR 128GB Black Chính hãng" style="text-align: left;">
+							<h3>Apple iPhone XR 128GB Black Chính hãng</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price">21,000,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">20,000,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="samsung-galaxy-s8-chinh-hang" title="Samsung Galaxy S8+ Chính hãng">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/cadd73e4617f599e52932e90a8f94976.jpg" alt="" />
+						</a>
+
+						<div class="sale-percent">
+							<span class="text-sale-percent">Giảm 20%</span>
+						</div>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="samsung-galaxy-s8-chinh-hang" title="Samsung Galaxy S8+ Chính hãng" style="text-align: left;">
+							<h3>Samsung Galaxy S8+ Chính hãng</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price">17,900,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">12,700,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="samsung-galaxy-note-9-xanh-den" title="Samsung Galaxy Note 9 Xanh đen">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/bb0cd93933cdc906b66e3fc8a961ee35.jpg" alt="" />
+						</a>
+
+						<div class="sale-percent">
+							<span class="text-sale-percent">Giảm 15%</span>
+						</div>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="samsung-galaxy-note-9-xanh-den" title="Samsung Galaxy Note 9 Xanh đen" style="text-align: left;">
+							<h3>Samsung Galaxy Note 9 Xanh đen</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price">22,980,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">18,900,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="apple-ipad-pro-11-2018-wi-fi-64gb-chinh-hang" title="Apple iPad Pro 11 2018 Wi-fi 64GB Chính hãng">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/ae20440301730c38e1ca3f1440c50fcc.jpg" alt="" />
+						</a>
+
+						<div class="sale-percent">
+							<span class="text-sale-percent">Giảm 15%</span>
+						</div>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="apple-ipad-pro-11-2018-wi-fi-64gb-chinh-hang" title="Apple iPad Pro 11 2018 Wi-fi 64GB Chính hãng" style="text-align: left;">
+							<h3>Apple iPad Pro 11 2018 Wi-fi 64GB Chính hãng</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price">22,500,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">19,500,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="huawei-mate-20-pro-xanh-duong" title="Huawei Mate 20 Pro (Xanh dương)">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/636753320259321737_huawei-mate20-pro-xanhla-1.jpg" alt="" />
+						</a>
+
+						<div class="sale-percent">
+							<span class="text-sale-percent">Giảm 10%</span>
+						</div>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="huawei-mate-20-pro-xanh-duong" title="Huawei Mate 20 Pro (Xanh dương)" style="text-align: left;">
+							<h3>Huawei Mate 20 Pro (Xanh dương)</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price">16,990,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">15,990,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="samsung-galaxy-m20-blue" title="Samsung Galaxy M20 Blue">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/fa97ee4b0f27dcf536795b32c58ae1c0.jpg" alt="" />
+						</a>
+
+						<div class="sale-percent">
+							<span class="text-sale-percent">Giảm 10%</span>
+						</div>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="samsung-galaxy-m20-blue" title="Samsung Galaxy M20 Blue" style="text-align: left;">
+							<h3>Samsung Galaxy M20 Blue</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price">4,990,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">4,250,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="samsung-galaxy-s10-plus-green" title="Samsung Galaxy S10+ (Plus) Green">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/5df5496a8fb411fd207b39eae9802655.jpg" alt="" />
+						</a>
+
+						<div class="sale-percent">
+							<span class="text-sale-percent">Giảm 10%</span>
+						</div>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="samsung-galaxy-s10-plus-green" title="Samsung Galaxy S10+ (Plus) Green" style="text-align: left;">
+							<h3>Samsung Galaxy S10+ (Plus) Green</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price">18,290,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">15,290,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="samsung-galaxy-a50-white" title="Samsung Galaxy A50 White">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/636872943529900358_samsung-galaxy-a50-trang-1.png" alt="" />
+						</a>
+
+						<div class="sale-percent">
+							<span class="text-sale-percent">Giảm 10%</span>
+						</div>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="samsung-galaxy-a50-white" title="Samsung Galaxy A50 White" style="text-align: left;">
+							<h3>Samsung Galaxy A50 White</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price">6,990,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">6,390,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="redmi-note-7-32gb-pink" title="Redmi Note 7 32GB Pink">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/dff47577347f3fddcda326afac0c7f34.jpg" alt="" />
+						</a>
+
+						<div class="sale-percent">
+							<span class="text-sale-percent">Giảm 10%</span>
+						</div>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="redmi-note-7-32gb-pink" title="Redmi Note 7 32GB Pink" style="text-align: left;">
+							<h3>Redmi Note 7 32GB Pink</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price">4,990,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">4,550,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container py-4">
+		<div class="sale-title">
+			<span>SẢN PHẨM BÁN CHẠY</span>
+		</div>
+    <div class="owl-carousel owl-carousel-product owl-theme">
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="samsung-galaxy-s10-white" title="Samsung Galaxy S10 White">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/15e1004aae0ad9dc632fab1c2c49a46f.jpg" alt="" />
+						</a>
+						<div class="sale-percent">
+							<span class="text-sale-percent">Giảm 20%</span>
+						</div>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="samsung-galaxy-s10-white" title="Samsung Galaxy S10 White" style="text-align: left;">
+							<h3>Samsung Galaxy S10 White</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price">20,900,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">15,400,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="chuot-khong-day-logitech-m185" title="Chuột không dây Logitech M185">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/3f83d23fdc12378fc61ac5c0e55c2476.png" alt="" />
+						</a>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="chuot-khong-day-logitech-m185" title="Chuột không dây Logitech M185" style="text-align: left;">
+							<h3>Chuột không dây Logitech M185</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price" style="color: #fff">250,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">250,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="pin-du-phong-xiaomi-20000-gen-3-type-c-2019" title="Pin dự phòng Xiaomi 20000 Gen 3 Type-C 2019">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/b95189cc9d879cd58511ea653de13c56.jpg" alt="" />
+						</a>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="pin-du-phong-xiaomi-20000-gen-3-type-c-2019" title="Pin dự phòng Xiaomi 20000 Gen 3 Type-C 2019" style="text-align: left;">
+							<h3>Pin dự phòng Xiaomi 20000 Gen 3 Type-C 2019</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price" style="color: #fff">790,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">790,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="samsung-galaxy-s10-plus-green" title="Samsung Galaxy S10+ (Plus) Green">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/5df5496a8fb411fd207b39eae9802655.jpg" alt="" />
+						</a>
+						<div class="sale-percent">
+							<span class="text-sale-percent">Giảm 10%</span>
+						</div>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="samsung-galaxy-s10-plus-green" title="Samsung Galaxy S10+ (Plus) Green" style="text-align: left;">
+							<h3>Samsung Galaxy S10+ (Plus) Green</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price">18,290,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">15,290,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="samsung-galaxy-s8-chinh-hang" title="Samsung Galaxy S8+ Chính hãng">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/cadd73e4617f599e52932e90a8f94976.jpg" alt="" />
+						</a>
+						<div class="sale-percent">
+							<span class="text-sale-percent">Giảm 20%</span>
+						</div>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="samsung-galaxy-s8-chinh-hang" title="Samsung Galaxy S8+ Chính hãng" style="text-align: left;">
+							<h3>Samsung Galaxy S8+ Chính hãng</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price">17,900,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">12,700,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="samsung-galaxy-m20-blue" title="Samsung Galaxy M20 Blue">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/fa97ee4b0f27dcf536795b32c58ae1c0.jpg" alt="" />
+						</a>
+						<div class="sale-percent">
+							<span class="text-sale-percent">Giảm 10%</span>
+						</div>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="samsung-galaxy-m20-blue" title="Samsung Galaxy M20 Blue" style="text-align: left;">
+							<h3>Samsung Galaxy M20 Blue</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price">4,990,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">4,250,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="huawei-p30-xanh-duong" title="Huawei P30 Xanh dương">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/23f164c8a75a27464e75292caebde305.png" alt="" />
+						</a>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="huawei-p30-xanh-duong" title="Huawei P30 Xanh dương" style="text-align: left;">
+							<h3>Huawei P30 Xanh dương</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price" style="color: #fff">16,900,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">16,900,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="apple-ipad-pro-11-2018-wi-fi-64gb-chinh-hang" title="Apple iPad Pro 11 2018 Wi-fi 64GB Chính hãng">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/ae20440301730c38e1ca3f1440c50fcc.jpg" alt="" />
+						</a>
+						<div class="sale-percent">
+							<span class="text-sale-percent">Giảm 15%</span>
+						</div>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="apple-ipad-pro-11-2018-wi-fi-64gb-chinh-hang" title="Apple iPad Pro 11 2018 Wi-fi 64GB Chính hãng" style="text-align: left;">
+							<h3>Apple iPad Pro 11 2018 Wi-fi 64GB Chính hãng</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price">22,500,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">19,500,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="huawei-mate-20-pro-xanh-duong" title="Huawei Mate 20 Pro (Xanh dương)">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/636753320259321737_huawei-mate20-pro-xanhla-1.jpg" alt="" />
+						</a>
+						<div class="sale-percent">
+							<span class="text-sale-percent">Giảm 10%</span>
+						</div>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="huawei-mate-20-pro-xanh-duong" title="Huawei Mate 20 Pro (Xanh dương)" style="text-align: left;">
+							<h3>Huawei Mate 20 Pro (Xanh dương)</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price">16,990,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">15,990,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="margin: 0px;">
+				<div class="products-sale">
+					<div class="lt-product-group-image">
+						<a href="iphone-xs-max-64gb-rose-gold" title="iPhone Xs Max 64GB  Rose gold">
+							<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/636748771945393060_iPhone-Xs-Max-gold.jpg" alt="" />
+						</a>
+					</div>
+					<div class="lt-product-group-info">
+						<a href="iphone-xs-max-64gb-rose-gold" title="iPhone Xs Max 64GB  Rose gold" style="text-align: left;">
+							<h3>iPhone Xs Max 64GB Rose gold</h3>
+						</a>
+						<div class="price-box">
+							<p class="old-price">
+								<span class="price" style="color: #fff">28,900,000₫</span>
+							</p>
+							<p class="special-price">
+								<span class="price">28,900,000₫</span>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div id="content">
+	<div class="container">
+		<div class="list-product">
+			<div class="list-header-z">
+				<h2><a href="dien-thoai">Điện thoại nổi bật</a></h2>
+				<ul class="sub-category">
+					<li><a href="san-pham/apple" title="Apple" class="ws-nw overflow ellipsis"> Apple</a></li>
+					<li><a href="san-pham/samsung" title="Samsung" class="ws-nw overflow ellipsis">Samsung</a></li>
+					<li><a href="san-pham/huawei" title="Huawei" class="ws-nw overflow ellipsis">Huawei</a></li>
+					<li><a href="san-pham/xiaomi" title="Xiaomi" class="ws-nw overflow ellipsis">Xiaomi</a></li>
+				</ul>
+			</div>
+			<div class="product-container">
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="samsung-galaxy-s10-plus-green" title="Samsung Galaxy S10+ (Plus) Green">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/5df5496a8fb411fd207b39eae9802655.jpg" alt="" />
+							</a>
+
+							<div class="sale-percent">
+								<span class="text-sale-percent">Giảm 10%</span>
+							</div>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="samsung-galaxy-s10-plus-green" title="Samsung Galaxy S10+ (Plus) Green" style="text-align: left;">
+								<h3>Samsung Galaxy S10+ (Plus) Green</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price">18,290,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">15,290,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="apple-iphone-xr-128gb-black-chinh-hang" title="Apple iPhone XR 128GB Black Chính hãng">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/1c8f01e59cf56a2c2e946b58f64f7624.jpg" alt="" />
+							</a>
+
+							<div class="sale-percent">
+								<span class="text-sale-percent">Giảm 20%</span>
+							</div>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="apple-iphone-xr-128gb-black-chinh-hang" title="Apple iPhone XR 128GB Black Chính hãng" style="text-align: left;">
+								<h3>Apple iPhone XR 128GB Black Chính hãng</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price">21,000,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">20,000,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="samsung-galaxy-m20-blue" title="Samsung Galaxy M20 Blue">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/fa97ee4b0f27dcf536795b32c58ae1c0.jpg" alt="" />
+							</a>
+
+							<div class="sale-percent">
+								<span class="text-sale-percent">Giảm 10%</span>
+							</div>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="samsung-galaxy-m20-blue" title="Samsung Galaxy M20 Blue" style="text-align: left;">
+								<h3>Samsung Galaxy M20 Blue</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price">4,990,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">4,250,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="samsung-galaxy-a50-white" title="Samsung Galaxy A50 White">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/636872943529900358_samsung-galaxy-a50-trang-1.png" alt="" />
+							</a>
+
+							<div class="sale-percent">
+								<span class="text-sale-percent">Giảm 10%</span>
+							</div>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="samsung-galaxy-a50-white" title="Samsung Galaxy A50 White" style="text-align: left;">
+								<h3>Samsung Galaxy A50 White</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price">6,990,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">6,390,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="redmi-note-7-32gb-pink" title="Redmi Note 7 32GB Pink">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/dff47577347f3fddcda326afac0c7f34.jpg" alt="" />
+							</a>
+
+							<div class="sale-percent">
+								<span class="text-sale-percent">Giảm 10%</span>
+							</div>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="redmi-note-7-32gb-pink" title="Redmi Note 7 32GB Pink" style="text-align: left;">
+								<h3>Redmi Note 7 32GB Pink</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price">4,990,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">4,550,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="apple-iphone-x-64gb-white-chinh-hang" title="Apple iPhone X 64GB White  Chính hãng">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/636483223586180190_1.jpg" alt="" />
+							</a>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="apple-iphone-x-64gb-white-chinh-hang" title="Apple iPhone X 64GB White  Chính hãng" style="text-align: left;">
+								<h3>Apple iPhone X 64GB White Chính hãng</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price" style="color: #fff">21,900,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">21,900,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="iphone-xs-max-64gb-rose-gold" title="iPhone Xs Max 64GB  Rose gold">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/636748771945393060_iPhone-Xs-Max-gold.jpg" alt="" />
+							</a>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="iphone-xs-max-64gb-rose-gold" title="iPhone Xs Max 64GB  Rose gold" style="text-align: left;">
+								<h3>iPhone Xs Max 64GB Rose gold</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price" style="color: #fff">28,900,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">28,900,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="huawei-mate-20-pro-xanh-duong" title="Huawei Mate 20 Pro (Xanh dương)">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/636753320259321737_huawei-mate20-pro-xanhla-1.jpg" alt="" />
+							</a>
+
+							<div class="sale-percent">
+								<span class="text-sale-percent">Giảm 10%</span>
+							</div>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="huawei-mate-20-pro-xanh-duong" title="Huawei Mate 20 Pro (Xanh dương)" style="text-align: left;">
+								<h3>Huawei Mate 20 Pro (Xanh dương)</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price">16,990,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">15,990,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="huawei-p30-xanh-duong" title="Huawei P30 Xanh dương">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/23f164c8a75a27464e75292caebde305.png" alt="" />
+							</a>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="huawei-p30-xanh-duong" title="Huawei P30 Xanh dương" style="text-align: left;">
+								<h3>Huawei P30 Xanh dương</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price" style="color: #fff">16,900,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">16,900,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="xiaomi-mi-8-64gb-den" title="Xiaomi Mi 8 64GB Đen">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/74ca778d59300c8f71236c436fa6dd9e.jpg" alt="" />
+							</a>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="xiaomi-mi-8-64gb-den" title="Xiaomi Mi 8 64GB Đen" style="text-align: left;">
+								<h3>Xiaomi Mi 8 64GB Đen</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price" style="color: #fff">8,490,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">8,490,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list-product">
+			<div class="list-header-z">
+				<h2><a href="laptop">Laptop nổi bật</a></h2>
+				<ul class="sub-category">
+					<li>
+						<a href="san-pham/dell" title="Dell" class="ws-nw overflow ellipsis"> Dell </a>
+					</li>
+					<li>
+						<a href="san-pham/asus" title="Asus" class="ws-nw overflow ellipsis"> Asus </a>
+					</li>
+					<li>
+						<a href="san-pham/hp" title="HP" class="ws-nw overflow ellipsis">HP</a>
+					</li>
+					<li>
+						<a href="san-pham/macbook" title="Macbook" class="ws-nw overflow ellipsis">Macbook</a>
+					</li>
+				</ul>
+			</div>
+			<div class="product-container">
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="laptop-asus-vivobook-15-a512fa-ej117t" title="Laptop Asus Vivobook 15 A512FA-EJ117T">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/d2c4ca51c189e719b725035e7586f871.jpg" alt="" />
+							</a>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="laptop-asus-vivobook-15-a512fa-ej117t" title="Laptop Asus Vivobook 15 A512FA-EJ117T" style="text-align: left;">
+								<h3>Laptop Asus Vivobook 15 A512FA-EJ117T</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price" style="color: #fff">11,490,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">11,490,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="apple-macbook-pro-13-inch-128gb-mpxq2-chinh-hang" title="Apple MacBook Pro 13 inch 128GB MPXQ2 Chính hãng">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/441c401340a20e12eb44d159e8cbd72a.jpg" alt="" />
+							</a>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="apple-macbook-pro-13-inch-128gb-mpxq2-chinh-hang" title="Apple MacBook Pro 13 inch 128GB MPXQ2 Chính hãng" style="text-align: left;">
+								<h3>Apple MacBook Pro 13 inch 128GB MPXQ2 Chính hãng</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price" style="color: #fff">29,900,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">29,900,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="laptop-apple-macbook-air-2018-i5-8gb-128gb" title="Laptop Apple Macbook Air 2018 i5/8GB/128GB">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/a7a0053cc6d2b90f2602dc1d9b77684b.jpg" alt="" />
+							</a>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="laptop-apple-macbook-air-2018-i5-8gb-128gb" title="Laptop Apple Macbook Air 2018 i5/8GB/128GB" style="text-align: left;">
+								<h3>Laptop Apple Macbook Air 2018 i5/8GB/128GB</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price" style="color: #fff">39,100,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">39,100,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="laptop-asus-zenbook-14-ux433fa-a6113t" title="Laptop Asus Zenbook 14 UX433FA-A6113T">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/057abb3c59a567ad0a730422fe2fe2a0.jpg" alt="" />
+							</a>
+
+							<div class="sale-percent">
+								<span class="text-sale-percent">Giảm 10%</span>
+							</div>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="laptop-asus-zenbook-14-ux433fa-a6113t" title="Laptop Asus Zenbook 14 UX433FA-A6113T" style="text-align: left;">
+								<h3>Laptop Asus Zenbook 14 UX433FA-A6113T</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price">22,990,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">22,490,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="laptop-hp-pavilion-15-cs0014tu-4mf01pa" title="Laptop HP Pavilion 15-cs0014TU 4MF01PA">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/2fffae1beec0f68c13e8c9864445e29d.jpg" alt="" />
+							</a>
+
+							<div class="sale-percent">
+								<span class="text-sale-percent">Giảm 10%</span>
+							</div>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="laptop-hp-pavilion-15-cs0014tu-4mf01pa" title="Laptop HP Pavilion 15-cs0014TU 4MF01PA" style="text-align: left;">
+								<h3>Laptop HP Pavilion 15-cs0014TU 4MF01PA</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price">13,890,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">11,890,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="laptop-dell-vostro-15-5581-70175950" title="Laptop Dell Vostro 15 5581 (70175950)">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/7041fb19db5fc6b0232f6b29914424d6.jpg" alt="" />
+							</a>
+
+							<div class="sale-percent">
+								<span class="text-sale-percent">Giảm 10%</span>
+							</div>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="laptop-dell-vostro-15-5581-70175950" title="Laptop Dell Vostro 15 5581 (70175950)" style="text-align: left;">
+								<h3>Laptop Dell Vostro 15 5581 (70175950)</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price">18,790,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">16,790,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="laptop-dell-inspiron-15-3576-70157552" title="Laptop Dell Inspiron 15 3576 (70157552)">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/ed89f871f145b6b99099923be292f9ba.jpg" alt="" />
+							</a>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="laptop-dell-inspiron-15-3576-70157552" title="Laptop Dell Inspiron 15 3576 (70157552)" style="text-align: left;">
+								<h3>Laptop Dell Inspiron 15 3576 (70157552)</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price" style="color: #fff">14,900,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">14,900,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list-product">
+			<div class="list-header-z">
+				<h2><a href="phu-kien">Phụ kiện nổi bật</a></h2>
+				<ul class="sub-category"></ul>
+			</div>
+			<div class="product-container">
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="cap-aukey-3-trong-1-lightning-micro-usb-c-cb-bal5-1-2m-chuan-mfi" title="Cáp AUKEY 3 trong 1 (Lightning, Micro, USB-C) CB-BAL5 1.2m Chuẩn MFI">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/9d67ba4f20f38ec6a2232ec0fca5f9e0.jpg" alt="" />
+							</a>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="cap-aukey-3-trong-1-lightning-micro-usb-c-cb-bal5-1-2m-chuan-mfi" title="Cáp AUKEY 3 trong 1 (Lightning, Micro, USB-C) CB-BAL5 1.2m Chuẩn MFI" style="text-align: left;">
+								<h3>Cáp AUKEY 3 trong 1 (Lightning, Micro, USB-C) CB-BAL5 1.2m Chuẩn MFI</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price" style="color: #fff">340,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">340,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="pin-du-phong-xiaomi-20000-gen-3-type-c-2019" title="Pin dự phòng Xiaomi 20000 Gen 3 Type-C 2019">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/b95189cc9d879cd58511ea653de13c56.jpg" alt="" />
+							</a>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="pin-du-phong-xiaomi-20000-gen-3-type-c-2019" title="Pin dự phòng Xiaomi 20000 Gen 3 Type-C 2019" style="text-align: left;">
+								<h3>Pin dự phòng Xiaomi 20000 Gen 3 Type-C 2019</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price" style="color: #fff">790,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">790,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="p-box-5">
+					<div class="product-lt">
+						<div class="lt-product-group-image">
+							<a href="chuot-khong-day-logitech-m185" title="Chuột không dây Logitech M185">
+								<img class="img-p" src="http://localhost/DO-AN-TN-2019/public/images/products/3f83d23fdc12378fc61ac5c0e55c2476.png" alt="" />
+							</a>
+						</div>
+
+						<div class="lt-product-group-info">
+							<a href="chuot-khong-day-logitech-m185" title="Chuột không dây Logitech M185" style="text-align: left;">
+								<h3>Chuột không dây Logitech M185</h3>
+							</a>
+							<div class="price-box">
+								<p class="old-price">
+									<span class="price" style="color: #fff">250,000₫</span>
+								</p>
+								<p class="special-price">
+									<span class="price">250,000₫</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="home-blog">
+    <div class="container">
+        <div class="row-p">
+            <div class="text-center">
+                <h2 class="sectin-title title title-blue">Tin tức công nghệ</h2>
+            </div>
+        </div>
+        <div class="blog-content d-flex">
+                            <div class="col-xs-12 col-12 col-sm-6 col-md-4 col-lg-4" style="margin: 5px;">
+                    <div class="latest">
+                        <a href="tin-tuc/sam-galaxy-a50-ba-chu-ban-chay-tam-trung-tang-them-qua-samsung-chinh-hang">
+                            <div class="tempvideo">
+                                <img width="98%" src="public/images/posts/samsung-galaxy-a50-black-9.jpg">
+                            </div>
+                            <h3 style="color: #999;">Sắm Galaxy A50, "bá chủ" bán chạy tầm trung, tặng thêm quà Samsung chính hãng</h3>
+                        </a>
+                    </div>
+                </div>
+                            <div class="col-xs-12 col-12 col-sm-6 col-md-4 col-lg-4" style="margin: 5px;">
+                    <div class="latest">
+                        <a href="tin-tuc/bat-chap-lenh-cam-doanh-so-smartphone-cua-huawei-van-tang-130-o-trung-quoc">
+                            <div class="tempvideo">
+                                <img width="98%" src="public/images/posts/huawei-hongmeng-os_800x450.jpg">
+                            </div>
+                            <h3 style="color: #999;">Bất chấp lệnh cấm, doanh số smartphone của Huawei vẫn tăng 130% ở Trung Quốc</h3>
+                        </a>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</div>
+<div class="adv">
+    <section id="service" style="margin: 20px;">
+        <div class="container">
+            <div id="service_home" class="row">
+            
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center m-b-xs-10">
+                    <div class="service_item">
+                        <div class="icon icon_product">
+                            <img src="http://localhost/DO-AN-TN-2019/public/images/icon_142e7.png" alt="">
+                        </div>
+                        <div class="description_icon">
+                            <span class="large-text">
+                                Miễn phí giao hàng
+                            </span>
+                            <span class="small-text">
+                                Cho hóa đơn từ 30,000,000 đ
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center m-b-xs-10">
+                    <div class="service_item">
+                        <div class="icon icon_product">
+                            <img src="http://localhost/DO-AN-TN-2019/public/images/icon_242e7.png" alt="">
+                        </div>
+                        <div class="description_icon">
+                            <span class="large-text">
+                                Giao hàng trong ngày
+                            </span>
+                            <span class="small-text">
+                                Với tất cả đơn hàng
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center m-b-xs-10">
+                    <div class="service_item">
+                        <div class="icon icon_product">
+                            <img src="http://localhost/DO-AN-TN-2019/public/images/icon_342e7.png" alt="">
+                        </div>
+                        <div class="description_icon">
+                            <span class="large-text">
+                                Sản phẩm an toàn
+                            </span>
+                            <span class="small-text">
+                                Cam kết chính hãng
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Begin-->
+    <!--End-->
+</div>
+
+<!--FOOTER-->
+<footer id="footer">
+    <div class="news-social">
+        <div class="container">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-unstyled social float-end">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <div class="clearfix"></div>
+          </div>
+      </div>
+  </div>
+  <div class="top-footer">
+    <div class="container d-flex flex-wrap">
+        <div class="col-xs-12 col-sm-12 col-md-6 d-flex flex-wrap">
+            <div class="col-xs-12 col-sm-6">
+                <a href="trang-chu">
+                    <a href="#" class="logo"><i class="fa fa-laptop"></i>Smart store</a>
+                </a>
+                <div class="about-store">
+                 Shop BookStore. Chất lượng - giá cả hợp lý
+             </div>
+         </div>
+         <div class="col-xs-12 col-sm-6">
+            <div class="f-contact">
+                <h3>Thông tin liên hệ</h3>
+                <ul class="list-unstyled">
+                    <li class="clearfix">
+                        <i class="fa fa-map-marker"></i>
+                        <span>33 Trần Xuân Soạn, Quận 7, TPHCM</span>
+                    </li>
+                    <li class="clearfix">
+                        <i class="fa fa-phone"></i>
+                        <span>0978651616 - 0981.334455</span>
+                    </li>
+                    <li class="clearfix">
+                        <i class="fa fa-envelope"></i>
+                        <span><a href="mailto:vanhiepp1998@gmail.com">vanhiepp1998@gmail.com</a></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 d-flex flex-wrap">
+        <div class="col-xs-12 col-sm-6">
+            <h3 class="footer-title">HỖ TRỢ KHÁCH HÀNG</h3>
+            <ul class="list-unstyled linklists">
+                <li><a href="chinh-sach">Hướng dẫn thanh toán</a></li>          
+                <li><a href="chinh-sach">Hướng dẫn đặt hàng</a></li>
+                <li><a href="dieu-khoan">Điều khoản</a></li>                   
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <h3 class="footer-title">Địa chỉ cửa hàng</h3>
+            <ul class="list-unstyled linklists">
+                <li><a href="chinh-sach">88 Trung Kính,Cầu Giấy,Hà Nội</a></li>          
+                <li><a href="chinh-sach">57 Bạch Mai,Hai Bà Trưng,Hà Nội</a></li>
+                <li><a href="dieu-khoan">02 Nguyễn Tất Thành,Quận 4,TP.HCM</a></li>                   
+            </ul>
+        </div>
+   </div>
+</div>
+</div>
+</footer>
+
+<div id="scrolltop" class='scrolltop' onclick="topFunction()">
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
+    
+<!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom-owl.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+</html>
