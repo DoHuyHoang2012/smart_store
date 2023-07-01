@@ -88,7 +88,9 @@ class CartController extends Controller
             $cart = $request->session()->get('cart');
             $cartPriceComponent = view('shop.templates.cart-price',compact('cart'))->render();
             $cartComponent = view($this->pathViewController.'child-index.cart-component',compact('cart'))->render();
-            return response()->json(['cart_component'=> $cartComponent,'cart_price'=> $cartPriceComponent, 'code' => 200],200);
+            $cartMobile = sprintf('<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <span>(%s)</span>',count($cart));
+            return response()->json(['cart_component'=> $cartComponent,'cart_price'=> $cartPriceComponent,'cart_mobile' => $cartMobile, 'code' => 200],200);
         }
     }
 

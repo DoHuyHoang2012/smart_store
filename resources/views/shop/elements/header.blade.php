@@ -73,10 +73,11 @@
         <div class="icon-cart-mobile">
           <a id="cart-mobile" href="gio-hang">
             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            <span>
               @if (session('cart'))
-                  ({{count(session('cart'))}})
-              @endif(0)</span>
+                  <span>({{count(session('cart'))}})</span>
+              @else
+              <span>(0)</span>
+              @endif
           </a>
         </div>
         <div class="header-offcanvas">

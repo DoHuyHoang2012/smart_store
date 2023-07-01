@@ -65,6 +65,7 @@ function onChangeSL(id){
            if(response.code === 200){
             $('.content-cart').html(response.cart_component);
             $('.cart_header .box_text').html(response.cart_price);
+          
            }
         },
         error: function(){
@@ -84,6 +85,7 @@ function onRemoveProduct(id){
             if(response.code === 200){
                 $('.content-cart').html(response.cart_component);
                 $('.cart_header .box_text').html(response.cart_price);
+                $('#cart-mobile').html(response.cart_mobile);
                }
         }
     });
